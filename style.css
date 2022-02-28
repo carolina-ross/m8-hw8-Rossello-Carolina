@@ -96,10 +96,43 @@ section.hero > .call-to-action {
 section.hero > button {
   background-color: var(--secondary-color);
   border: none;
-  padding: 12px 24px;
+  padding: 15px;
   border-radius: 12px;
   text-transform: uppercase;
+  text-align: center;
+  font-size: 15px;	
   cursor: pointer;
+  transition: all 0.5s;
+  width: 140px;	
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button:hover {
+	background-color: #F5AA84;
+}
+
+.button:hover span {
+	padding-right: 20px;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	right: -15px;
+	transition: 0.5s;
+	top: 0;
+	opacity: 0;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
 }
 
 main article {
