@@ -8,6 +8,7 @@
   --white: #FFFFFF;
   --off-white: #F1F2F4;
   --gray: #A1A1A1;
+  --mainColor: white;
 }
 
 body {
@@ -39,6 +40,29 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+}
+
+nav a {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px);
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: #000;
+  padding-left: 10px;
+  text-decoration: none;	
+}
+
+nav a:hover {
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent);
 }
 /* end header link animations */
 
